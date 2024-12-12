@@ -71,5 +71,5 @@ clusters = kmeans.fit_predict(X_pca[sample_indices, :50])
 custom_colors = ['green' if cluster==0 else 'red' for cluster in clusters]
 plt.figure(figsize=(8,6))
 plt.scatter(X_pca[sample_indices,0], X_pca[sample_indices, 1], c=custom_colors, cmap='coolwarm', edgecolors='k', s=50)
-plt.title('Clustering con Kmeans en datos muestreados')
+plt.title('Clustering sobre imágenes de Ultrasonido Pulmonar')
 plt.show()
